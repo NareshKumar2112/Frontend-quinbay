@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./homePage.css">
+    <script src="/Users/nareshkumarg/Desktop/Frontend project/js files/home.js" defer></script>
+    <title>Home page</title>
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <h2>Blibli Mart</h2>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button type="submit" >Search</button>
+            </div>
+            <img src="/Users/nareshkumarg/Desktop/Frontend project/Asserts/cartlogo.png" alt="cart logo"/>
+            <nav>
+                <a href="#category">Login</a>
+                <a href="#myorders">Signup</a>
+            </nav>
+        </div>
+    </header>
+    <div class="filter-container">
+        <h1>Filters</h1>
+        <form class="filter-form-container" id="filterFormId">
+            <label>
+                <input type="checkbox" id="stock-availability">
+                stocks available
+            </label>
+            <label>
+                <input type="number" id="min-value" name="min-value">
+                min value
+            </label>
+            <label>
+                <input type="number" id="max-value" name="max-value">
+                max value
+            </label><br>
+            <button type="submit">Filter</button>
+        </form>
+    </div>
+   <div class="container">
+       <div class="form-section-container" >
+           <form id="formId" class="form-container">
+               <h2>Add Products</h2>
+               <label for="name">Product Name</label>
+               <input type="text" id="name" name="name" required>
+               <label for="price">Price</label>
+               <input type="number" id="price" name="price" required>
+               <label for="quantity">Quantity</label>
+               <input type="number" id="quantity" name="quantity" required>
+               <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div id="productDisplayContainerId" class="product-display-container">
+            <div class="subcontainers">
+                <img src="/Users/nareshkumarg/Desktop/Frontend project/Asserts/shirt.jpg",alt="shirt image"/>
+                <h1 id="productname">pant</h1>
+                <h2>Available :200</h2>
+                <h2>Price : $20</h2>
+                <button class="shop-now-button" id="shoppingId" type="submit">Shop Now</button>
+            </div>
+        </div>
+        <div class="wishlist-container">
+            <h2>Your Wishes</h2>
+        </div>
+    </div>
+</body>
+</html>
